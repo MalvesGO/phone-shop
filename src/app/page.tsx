@@ -1,6 +1,7 @@
 import { Icons } from "@/components/Icons";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Phone from "@/components/Phone";
+import { Reviews } from "@/components/Reviews";
 import { Check, Star } from "lucide-react";
 import Image from "next/image";
 
@@ -83,11 +84,11 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col justify-between items-center sm:items-start">
                   <div className="flex gap-0.5">
-                    <Star className="h-4 w-4 shrink-0 text-green-600" />
-                    <Star className="h-4 w-4 shrink-0 text-green-600" />
-                    <Star className="h-4 w-4 shrink-0 text-green-600" />
-                    <Star className="h-4 w-4 shrink-0 text-green-600" />
-                    <Star className="h-4 w-4 shrink-0 text-green-600" />
+                    <Star className="h-4 w-4 shrink-0 text-green-600 fill-green-600" />
+                    <Star className="h-4 w-4 shrink-0 text-green-600 fill-green-600" />
+                    <Star className="h-4 w-4 shrink-0 text-green-600 fill-green-600" />
+                    <Star className="h-4 w-4 shrink-0 text-green-600 fill-green-600" />
+                    <Star className="h-4 w-4 shrink-0 text-green-600 fill-green-600" />
                   </div>
                   <p>
                     <span className="font-semibold">1250</span> happy customers
@@ -209,6 +210,10 @@ export default function Home() {
             </div>
           </div>
         </MaxWidthWrapper>
+
+        <div className="pt-16">
+          <Reviews />
+        </div>
       </section>
     </div>
   );
